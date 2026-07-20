@@ -1,7 +1,7 @@
 function source_coding()
     % Parameters
     bits_per_sample = 6;                 % K
-    audio_file      = 'Crazy_Frog.wav';       % << change to your file name
+    audio_file      = 'sample.wav';       % << change to your file name
 
     % 1) Read and quantize audio
     if ~isfile(audio_file)

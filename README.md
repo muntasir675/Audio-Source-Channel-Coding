@@ -26,4 +26,4 @@ Select mode 1 (source coding only) or mode 2 (full pipeline). Output WAV files a
 | `main.m` | Mode selection entry point |
 | `source_coding.m` | Huffman source coding stage |
 | `channel_coding.m` | BSC + convolutional coding stage |
-| `Crazy_Frog.wav` | Input audio example |
+| `sample.wav` | Input audio example |
