@@ -1,7 +1,7 @@
 function source_coding()
     % Parameters
     bits_per_sample = 6;                 % K
-    audio_file      = 'sample.wav';       % << change to your file name
+    audio_file      = 'sample.wav';
 
     % 1) Read and quantize audio
     if ~isfile(audio_file)
@@ -175,7 +175,6 @@ end
 
 
     % 10) Bonus: compare with built-in Huffman (if Communications Toolbox present)
-    % 10) Bonus: compare with built-in Huffman (if Communications Toolbox present)
     has_builtin = exist('huffmandict','file')==2 && exist('huffmanenco','file')==2;
 
     if has_builtin && N < 100000  % Add size check
@@ -202,7 +201,7 @@ end
 
 
 % Choose a later starting point so you avoid the initial silence
-start_sample = Fs * 5;             % start after 1 second (for example)
+start_sample = Fs * 5;             % start after 5 second (for example)
 Nplot        = min(5000, numel(raw_signal) - start_sample);
 idx          = start_sample + (0:Nplot-1);
 t            = (0:Nplot-1) / Fs;
